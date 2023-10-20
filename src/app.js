@@ -2,8 +2,12 @@
 
 const express = require('express');
 const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
 
 const app = express();
+
+//conexão ao banco
+mongoose.connect('mongodb+srv://balta:balta@node-str.pkxp8wr.mongodb.net/?retryWrites=true&w=majority')
 
 //carrega rotas
 const indexRoute = require('./routes/index-route')
