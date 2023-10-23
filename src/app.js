@@ -3,11 +3,12 @@
 const express = require('express');
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
+const config = require('./config')
 
 const app = express();
 
 //conexão ao banco
-mongoose.connect('mongodb+srv://balta:balta@node-str.pkxp8wr.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect(config.connectionString)
 
 //carrega models
 const Product = require('./models/product')
