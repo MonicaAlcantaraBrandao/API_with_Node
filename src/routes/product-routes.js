@@ -7,7 +7,7 @@ const controller = require('../controller/product-controller')
 router.get('/', controller.get)
 router.get('/:slug', controller.getBySlug)
 router.get('/admin/:id', controller.getById)
-router.get('/tags/:tag', controller.getByTag)
+router.get('/tags/:tags', controller.getByTag)
 
 router.post('/', controller.post)
 
