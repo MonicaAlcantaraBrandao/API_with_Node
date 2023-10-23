@@ -11,6 +11,7 @@ mongoose.connect('mongodb+srv://balta:balta@node-str.pkxp8wr.mongodb.net/?retryW
 
 //carrega models
 const Product = require('./models/product')
+const Costumer = require('./models/customer')
 
 //carrega rotas
 const indexRoute = require('./routes/index-route')
