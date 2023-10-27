@@ -35,7 +35,7 @@ const schema = new Schema({
     }],
     image: {
         type: String,
-        required: false,
+        required: true,
         trim: true
     }
 })

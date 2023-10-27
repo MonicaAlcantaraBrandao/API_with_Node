@@ -18,9 +18,11 @@
     "http": "^0.0.1-security",
     "md5": "^2.3.0",
     "mongodb": "^6.2.0",
-    "mongoose": "^7.6.3"
+    "mongoose": "^7.6.3",
+    "sendgrid": "^2.0.0"
   },
   "devDependencies": {
+    "@types/sendgrid": "^4.3.0",
     "nodemon": "^3.0.1"
   }
 }
